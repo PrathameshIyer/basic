@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
-app.get("/", async (req, res) => {
+
+app.use("/", (req, res) => {
     res.send("hello")
-  });
+});
   
-  app.listen(8000);
+app.listen(8000);
   
